@@ -44,6 +44,9 @@ void Level02::LoadContent(ResourceManager& resourceManager)
 		AddGameObject(pEnemy);
 	}
 
+	// Setup background
+	SetBackground(resourceManager.Load<Texture>("Textures\\mikebackground.png"));
+
 	Level::LoadContent(resourceManager);
 }
 

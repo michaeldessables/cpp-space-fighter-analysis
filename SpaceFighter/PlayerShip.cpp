@@ -9,12 +9,13 @@ void PlayerShip::LoadContent(ResourceManager& resourceManager)
 
 	m_pTexture = resourceManager.Load<Texture>("Textures\\PlayerShip.png");
 
+	SetSpeed(600);
+
 	AudioSample* pAudio = resourceManager.Load<AudioSample>("Audio\\Effects\\Laser.wav");
 	pAudio->SetVolume(0.5f);
 	GetWeapon("Main Blaster")->SetFireSound(pAudio);
 
 	SetPosition(Game::GetScreenCenter() + Vector2::UNIT_Y * 300);
-
 }
 
 

@@ -158,4 +158,7 @@
       <Filter>Source Files\Game Objects\Misc</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Downloads\mikebackground.png" />
+  </ItemGroup>
 </Project>
